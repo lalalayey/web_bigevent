@@ -28,6 +28,7 @@ $(function() {
         }
         $.post('/api/reguser', data, function(res) {
             console.log(res);
+
             if (res.status !== 0) {
 
                 return layer.msg(res.message);
